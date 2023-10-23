@@ -1,15 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width, initial-scale=1.0">
-    <title>Scan and Order </title>
-</head>
-<body>
-    <div class="container">
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="header">
+            <p class="logo">ADD TO PLATER</p>
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p id="count">0</p>
+            </div>
+        </div>
+        <div class="container">
+            <div id="root">
+                 <!-- using js -->
+            </div>
+           
+            <div class="sidebar">
+                <div class="head">
+                    <p>My Cart</p>
+                </div>
+                <div id="cartItem">Your cart is empty</div>
+                
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">$ 0.00</h2>
+                </div>
 
-        
-    </div>
+                <div>
+                    <button  id= "order-button" type="button" class="btn btn-primary btn-lg " id="load1" data-loading-text="<i class='fa fa-circle-o-notch fa-spin' ></i> Processing Order">Place Order</button>
+                </div>
+            </div>
 
-</body>
+            <div class="model">
+                <h1 class="model-header">Enter Details</h1>
+                <form action="order.html" method="" id="myForm">
+                  <input type="number" name="tableno" placeholder="Tabel No." min="1" max="30" maxlength="2" pattern="^[0-9]*$" title="Please Make Sure that Tabel Number is valid" required />
+                  <input type="text" name="name" placeholder="Your Name" required />
+                  <input type="text" name="mobileno" placeholder="Mobile No." maxlength="10" pattern="^[0-9]*$" title="Please Make Sure that Mobile number is valid" required />
+                  <!-- <input type="submit" id="order" class="pay-btn" value="Order" /> -->
+                  <button id="order" onclick="myfunction()">Order</button>
+                    <button id="close" onclick="myfunction()">Close</button>               
+                </form>
+            </div> 
+            
+            
+
+
+
+        <script src="script.js"></script>
+    </body>
 </html>
