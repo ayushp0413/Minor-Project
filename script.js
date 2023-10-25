@@ -19,9 +19,9 @@ const product = [
    },
    {
        id: 3,
-       image: 'image/aa-1.jpg',
-       title: 'Pizza',
-       price: 180,
+       image: 'image/v.png',
+       title: 'Veg Grilled Sandwich',
+       price: 80,
    },
    {
     id: 4,
