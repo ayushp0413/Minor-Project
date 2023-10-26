@@ -25,9 +25,9 @@ const product = [
    },
    {
     id: 4,
-    image: 'image/aa-1.jpg',
-    title: 'Pizza',
-    price: 299,
+    image: 'image/c.png',
+    title: 'Veg Club Sandwich',
+    price: 100,
     },
     {
         id: 5,
