@@ -7,15 +7,15 @@ const product = [
    },
    {
        id: 1,
-       image: 'image/bb-1.jpg',
-       title: ' Burger Special',
-       price: 60,
+       image: 'image/d.png',
+       title: ' Cheese Pizza',
+       price: 150,
    },
    {
        id: 2,
-       image: 'image/cc-1.jpg',
-       title: 'Roasted Chicken ',
-       price: 230,
+       image: 'image/e.png',
+       title: 'Special Mix Pizza ',
+       price: 200,
    },
    {
        id: 3,
