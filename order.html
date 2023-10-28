@@ -11,31 +11,64 @@
         h1{
             text-align: center;
             position: absolute;
-            top: 47%;
+            top: 40%;
             left: 37%;
         }
-        #close
+        .container
         {
-            position: absolute;
-            top: 60%;
-            left:50%;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items:center;
+            justify-content: center;
+
+
+        }
+        button
+        {
             background-color: rgb(223, 190, 42);
-            width: 100px;
+            width: 130px;
+            margin: 4px;
             padding: 15px;
             border-radius: 10px;
+            border-color: none;
             font-size:400;
         }
-        #close:hover{
+        
+        
+        #close:hover , #view-order:hover , #cancel-order:hover{
             background-color:#333;
             color:white;
         }
+
+
     </style>
 </head>
 <body>
 <h1>THANKS! Your Order Is Placed.</h1>
 <form action="index.html">
-    <button id="close">Close</button>
+    <div class="container">
+        <div class="item1">
+            <button id="close">Back to Menu</button>
+        </div>
+        <div class="item2">
+            <button  onclick="mycancel()" id="cancel-order">Cancel Order</button>
+        </div>
+        <div class="item3">
+            <button  onclick="myview()" id="view-order">View Order</button>
+        </div>
+    </div>
 </form>
+<script>
+    function mycancel(){
+    alert("Your Order is Canclled !!");
+}
+    function myview(){
+    alert("Not yet implemented !!");
+}
+</script>
 
 </body>
 </html>
