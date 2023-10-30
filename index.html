@@ -38,12 +38,12 @@
 
             <div class="model">
                 <h1 class="model-header">Enter Details</h1>
-                <form action="order.html" method="" id="myForm">
-                  <input type="number" name="tableno" placeholder="Tabel No." min="1" max="30" maxlength="2" pattern="^[0-9]*$" title="Please Make Sure that Tabel Number is valid" required />
-                  <input type="text" name="name" placeholder="Your Name" required />
-                  <input type="text" name="mobileno" placeholder="Mobile No." maxlength="10" pattern="^[0-9]*$" title="Please Make Sure that Mobile number is valid" required />
-                  <!-- <input type="submit" id="order" class="pay-btn" value="Order" /> -->
-                  <button id="order" onclick="myfunction()">Order</button>
+                <form action="order.php" method="POST" id="myForm">
+                  <input type="number" name="table" id="tableno" placeholder="Tabel No." min="1" max="30" maxlength="2" pattern="^[0-9]*$" title="Please Make Sure that Tabel Number is valid" required />
+                  <input type="text" name="name" id="name" placeholder="Your Name" required />
+                  <input type="text" name="mobile" id="mobileno" placeholder="Mobile No." maxlength="10" pattern="^[0-9]*$" title="Please Make Sure that Mobile number is valid" required />
+                  <!-- <input type="submit" id="order" name="submit" class="pay-btn" value="Order" /> -->
+                  <button name="submit" id="order" onclick="myfunction1()">Order</button>
                   <button id="close" onclick="myfunction()">Close</button>               
                 </form>
             </div> 
