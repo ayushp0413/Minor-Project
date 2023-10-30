@@ -173,3 +173,8 @@ document.addEventListener("click", (e) =>
 }
 )
 
+function myfunction1()
+{
+        
+
+}
