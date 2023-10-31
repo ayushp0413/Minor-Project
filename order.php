@@ -9,11 +9,23 @@ if(isset($_POST['submit']))
 
     $conn = mysqli_connect('localhost','root','','food');
 
-    $sql = "INSERT INTO customers(tableno,name,mobile) values ('$table','$name','$mobile')";
-        
-    mysqli_query($conn,$sql);
+   // if(table no already taken not allot )
+    //{
 
-    echo "Your Order is Placed !"; 
+    //}
+    //else{
+
+        $sql = "INSERT INTO customers(tableno,name,mobile) values ('$table','$name','$mobile')";
+        
+        mysqli_query($conn,$sql);
+        
+        echo "Thankyou! Your Order is Placed."; 
+    //}
+    
+
+
+
+
 
 }
 ?>
