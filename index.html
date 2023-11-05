@@ -32,7 +32,7 @@
                 </div>
 
                 <div>
-                    <button  id= "order-button" type="button" class="btn btn-primary btn-lg " id="load1" data-loading-text="<i class='fa fa-circle-o-notch fa-spin' ></i> Processing Order">Place Order</button>
+                    <button name="place_order" id= "order-button" type="button" class="btn btn-primary btn-lg " id="load1" data-loading-text="<i class='fa fa-circle-o-notch fa-spin' ></i> Processing Order">Place Order</button>
                 </div>
             </div>
 
@@ -41,9 +41,11 @@
                 <form action="order.php" method="POST" id="myForm">
                   <input type="number" name="table" id="tableno" placeholder="Tabel No." min="1" max="30" maxlength="2" pattern="^[0-9]*$" title="Please Make Sure that Tabel Number is valid" required />
                   <input type="text" name="name" id="name" placeholder="Your Name" required />
-                  <input type="text" name="mobile" id="mobileno" placeholder="Mobile No." maxlength="10" pattern="^[0-9]*$" title="Please Make Sure that Mobile number is valid" required />
-                  <!-- <input type="submit" id="order" name="submit" class="pay-btn" value="Order" /> -->
-                  <a href="order.html"><button name="submit" id="order" onclick="myfunction1()">Order</button></a>
+                  <input type="number" name="mobile" id="mobileno" placeholder="Mobile No." maxlength="10" pattern="^[0-9]*$" title="Please Make Sure that Mobile number is valid" required />
+                  <!-- <input type="text" name="items" id="items" placeholder="Your Order" required /> -->
+          
+                  <input type="submit" id="order" name="submit" value="Order">
+
                   <button id="close" onclick="myfunction()">Close</button>               
                 </form>
             </div> 
